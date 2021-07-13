@@ -1,0 +1,56 @@
+<br><br>
+<center>
+
+<table border=0>
+<tr> <th colspan=2> Registration form </th>
+<tr> <td> User id </td> <td> <input type="text" id="userid" /> </td> 
+<tr> <td> Password </td> <td> <input type="Password" id="password" /> </td> 
+<tr> <td> Name </td> <td> <input type="text" id="name" /> </td> 
+<tr> <td> Father's name </td> <td> <input type="text" id="fname" /> </td> 
+<tr> <td> Date of birth </td> <td> <input type="date" id="dob" /> </td> 
+<tr> <td> Adress </td> <td> <input type="text" id="add" /> </td> 
+<tr> <td> Mobile no </td> <td> <input type="text" id="mob" /> </td>
+<tr> <td> Cast </td> <td> <input type="text" id="cast" /> </td> 
+<tr> <td> Religion </td> <td> <input type="text" id="rel" /> </td> 
+<tr> <td> Country </td> <td> <select id="s1"> <option> india </option> 
+<option> Nepal </option>
+<option> China </option>
+<option> Bhutan </option>
+</select> </td> </tr>
+<tr> <td> </td> <td><input type="button" value="Register" onclick="reg()" /> </td>
+</table>
+<p id="p1"> </p>
+
+
+<script>
+function reg()
+{
+a=userid.value
+b=password.value
+c=name.value
+d=fname.value
+e=dob.value
+f=add.value
+g=mob.value
+h=cast.value
+i=rel.value
+j=s1.value
+
+x="<table border=0 > <tr> <th> User Id </th> <td> " + a + " </td> </tr>"
+x+="<tr> <th> Password </th> <td> " + b + " </td> </tr>"
+x+="<tr> <th> Name </th> <td> " + c + " </td> </tr>"
+x+="<tr> <th> Father's name </th> <td> " + d + " </td> </tr>"
+x+="<tr> <th> Date of birth </th> <td> " + e + " </td> </tr>"
+x+="<tr> <th> Adress </th> <td> " + f + " </td> </tr>"
+x+="<tr> <th> Mobile no </th> <td> " + g + " </td> </tr>"
+x+="<tr> <th> Cast </th> <td> " + h + " </td> </tr>"
+x+="<tr> <th> Religion </th> <td> " + i + " </td> </tr>"
+x+="<tr> <th> Country </th> <td> " + j + " </td> </tr>"
+x+="</table>"
+
+p1.innerHTML=x
+}
+</script>
+
+</center>
+
