@@ -1,0 +1,45 @@
+<style>
+h1{color:red;}
+.inp{height:30px;}
+</style>
+
+<center>
+<br><br>
+<h1><u>Greatest Number Among Three Numbers</u></h1>
+<br>
+
+<b><font size=5 color=blue >Number-1</font></b>
+<input type="text" id="n1" class="inp" /><br><br>
+
+<b><font size=5 color=blue >Number-2</font></b>
+<input type="text" id="n2" class="inp" /><br><br>
+
+<b><font size=5 color=blue >Number-3</font></b>
+<input type="text" id="n3" class="inp" /><br><br>
+
+<input type="button" value=Find onclick="gtr()" />
+
+
+<br><div id="d1" > </div>
+<script>
+function gtr()
+{
+a=parseInt(n1.value)
+b=parseInt(n2.value)
+c=parseInt(n3.value)
+
+if (a>b & a>c)
+d="Number 1 is greater"
+
+else if (b>a & b>c)
+d="Number 2 is greater"
+
+else if (c>a & c>b)
+d="Number 3 is greater"
+
+else if (a == b & b == c)
+d="All numbers are equal"
+d1.innerHTML= d
+}
+</script>
+</center>
